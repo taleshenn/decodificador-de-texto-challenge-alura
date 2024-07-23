@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Challenge - Decodificador de Texto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="cripto">
+        <div class="cripto__header">
+          <img class="cripto__header--logo" src="assets/img/logo.svg" />
+          <h1>Alura Cripto-Uncripto App</h1>
+        </div>
+        <div class="cripto__alerta">
+          <img src="assets/img/alertaCinza.svg" />
+          <p>use apenas letras minusculas e sem acento.</p>
+        </div>
+        <div class="cripto__mensagem">
+          <textarea
+            class="cripto__mensagem--input"
+            rows="4"
+            placeholder="Digite ou cole seu texto aqui."
+          ></textarea>
+        </div>
+        <div class="cripto__conteudo--acoes">
+          <button class="botao__primario">Criptografar</button>
+          <button class="botao__secundario">Descriptografar</button>
+        </div>
+      </section>
+      <section class="uncripto">
+        <div class="uncripto__mensagem">
+          <figure class="uncripto__mensagem--figure">
+            <img
+              class="uncripto__mensagem--imagem"
+              src="assets/img/criptoHolder.svg"
+              alt="Ilustração de uma pessoa olhando um diamante através de uma lupa."
+            />
+            <figcaption class="uncripto__mensagem--texto">
+              Nenhuma mensagem encontrada
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="uncripto__mensagem">
+          <textarea
+            class="uncripto__mensagem--input"
+            rows="4"
+            placeholder="Digite ou cole seu texto aqui."
+          ></textarea>
+        </div>
+
+        <div class="uncripto__acoes">
+          <button class="botao__primario">Copiar</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
