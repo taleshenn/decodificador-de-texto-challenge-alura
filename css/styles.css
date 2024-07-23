@@ -35,6 +35,9 @@ main {
 }
 
 .cripto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50vw;
   background-color: var(--cor-secundaria);
   box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
@@ -92,14 +95,16 @@ main {
   border-radius: var(--border-radius);
 }
 
-.cripto__mensagem--input::placeholder {
+.cripto__mensagem--input::placeholder,
+.uncripto__mensagem--input::placeholder {
   color: var(--cor-neutra-media);
   font-size: 0.75rem;
   font-weight: 200;
   padding-left: 0.3rem;
 }
 
-.cripto__mensagem--input:focus {
+.cripto__mensagem--input:focus,
+.uncripto__mensagem--input:focus {
   outline: none;
   box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
   color: var(--cor-primaria);
@@ -115,7 +120,8 @@ main {
 }
 
 .botao__primario,
-.botao__secundario {
+.botao__secundario,
+.botao__terciario {
   border-color: var(--cor-primaria);
   border-width: 1px;
   border-style: solid;
@@ -145,7 +151,21 @@ main {
   color: var(--cor-neutra-clara);
 }
 
+.botao__terciario {
+  background-color: var(--cor-neutra-clara);
+  color: var(--cor-primaria);
+}
+
+.botao__terciario:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-neutra-clara);
+}
+
 .uncripto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 30vw;
   background-color: var(--cor-secundaria);
   box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
@@ -158,6 +178,7 @@ main {
 .uncripto__mensagem {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
   width: 100%;
