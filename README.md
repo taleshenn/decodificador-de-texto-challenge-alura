@@ -17,21 +17,21 @@ Este projeto é um desafio da Alura para criar um decodificador de texto com des
 
 ## Como Usar (em desenvolvimento)
 
-1.  **Clonar o Repositório:**
+1. **Clonar o Repositório:**
 
-    ```bash
-    git clone [https://github.com/taleshenn/decodificador-de-texto-challenge-alura.git](https://github.com/taleshenn/decodificador-de-texto-challenge-alura.git)
-    ```
+   ```bash
+   git clone [https://github.com/taleshenn/decodificador-de-texto-challenge-alura.git](https://github.com/taleshenn/decodificador-de-texto-challenge-alura.git)
+   ```
 
-2.  **Abrir no Navegador:**
+2. **Abrir no Navegador:**
 
-    Abra o arquivo `index.html` em seu navegador.
+   Abra o arquivo `index.html` em seu navegador.
 
-3.  **Criptografar/Descriptografar:**
+3. **Criptografar/Descriptografar:**
 
-    - Insira o texto desejado na área de texto.
-    - Clique no botão "Criptografar" ou "Descriptografar".
-    - O resultado será exibido na área de texto abaixo.
+   - Insira o texto desejado na área de texto.
+   - Clique no botão "Criptografar" ou "Descriptografar".
+   - O resultado será exibido na área de texto abaixo.
 
 ## Próximas Etapas
 
