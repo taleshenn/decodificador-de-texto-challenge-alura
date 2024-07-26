@@ -1,0 +1,42 @@
+.botao__primario,
+.botao__secundario,
+.botao__terciario {
+  border-color: var(--cor-primaria);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 27px;
+  font-size: 0.75rem;
+  font-weight: normal;
+  padding: 0.75rem 3rem;
+  min-width: 50%;
+}
+
+.botao__primario {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+}
+
+.botao__primario:hover {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.botao__secundario {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.botao__secundario:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+}
+
+.botao__terciario {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.botao__terciario:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+}
