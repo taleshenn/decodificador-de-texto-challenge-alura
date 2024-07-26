@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "base.css";
+@import "layout.css";
+@import "componentes.css";
+@import "responsivo.css";
+
+:root {
+  --cor-primaria: #0a3871;
+  --cor-secundaria: #ecf4fd;
+  --cor-terciaria: #d5e2f3;
+  --padding: 1rem;
+  --border-radius: 10px;
+}

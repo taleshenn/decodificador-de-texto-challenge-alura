@@ -39,3 +39,25 @@ Este projeto é um desafio da Alura para criar um decodificador de texto com des
 - **Adicionar validação de entrada (letras minúsculas sem acento).**
 - **Aprimorar o design e a responsividade.**
 - **Adicionar recursos extras (ex: copiar texto criptografado).**
+
+## Branch `refatoracao-css-modular`
+
+### O que foi feito
+
+O código CSS foi dividido em módulos para melhorar a organização e facilitar a manutenção do projeto. Agora, cada aspecto do estilo (base, layout, componentes, responsividade) possui seu próprio arquivo.
+
+### Por que foi feito
+
+- **Organização:** Código mais estruturado e fácil de navegar.
+- **Legibilidade:** Propósito claro para cada arquivo CSS.
+- **Reutilização:** Componentes com estilos próprios, facilitando o reúso.
+- **Manutenção:** Mudanças mais seguras e isoladas por componente/funcionalidade.
+- **Escalabilidade:** Adição de recursos sem afetar o código existente.
+
+### Estrutura dos Módulos
+
+- `base.css`: Estilos básicos (reset, tipografia).
+- `componentes.css`: Estilos de componentes reutilizáveis (botões, formulários).
+- `layout.css`: Layout da página (grid, flexbox).
+- `responsivo.css`: Media queries para diferentes telas.
+- `style.css`: Importa os outros módulos.
