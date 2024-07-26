@@ -5,9 +5,6 @@
   --cor-primaria: #0a3871;
   --cor-secundaria: #ecf4fd;
   --cor-terciaria: #d5e2f3;
-  --cor-neutra-clara: #ffffff;
-  --cor-neutra-media: #808080;
-  --cor-neutra-escura: #000000;
   --padding: 1rem;
   --border-radius: 10px;
 }
@@ -23,35 +20,37 @@ html,
 body {
   display: flex;
   justify-content: center;
+  background-color: var(--cor-terciaria);
 }
 
 main {
-  background-color: var(--cor-neutra-clara);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.cripto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50vw;
-  background-color: var(--cor-secundaria);
-  box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
+  width: 100vw;
+  padding: 1rem;
+  gap: var(--padding);
+}
+
+.cripto,
+.uncripto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   padding: var(--padding);
-  margin: 10px;
-  height: 80vh;
+  background-color: var(--cor-secundaria);
   border-radius: var(--border-radius);
+  box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
 }
 
 .cripto__header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding: var(--padding);
 }
 
 .cripto__header--logo {
@@ -61,28 +60,29 @@ main {
 
 .cripto__header h1 {
   color: var(--cor-primaria);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .cripto__alerta {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
 }
 
 .cripto__alerta p {
-  color: var(--cor-neutra-media);
+  color: var(--cor-primaria);
   font-size: 0.75rem;
   font-weight: 400;
   padding-left: 0.3rem;
 }
 
-.cripto__mensagem {
-  margin-top: 1rem;
-  width: 90%;
-  height: 70%;
-  padding-bottom: 1rem;
+.cripto__mensagem,
+.uncripto__mensagem {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .cripto__mensagem--input,
@@ -93,11 +93,12 @@ main {
   resize: none;
   padding: var(--padding);
   border-radius: var(--border-radius);
+  background-color: var(--cor-terciaria);
 }
 
 .cripto__mensagem--input::placeholder,
 .uncripto__mensagem--input::placeholder {
-  color: var(--cor-neutra-media);
+  color: var(--cor-primaria);
   font-size: 0.75rem;
   font-weight: 200;
   padding-left: 0.3rem;
@@ -116,7 +117,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: var(--padding);
 }
 
 .botao__primario,
@@ -129,11 +130,12 @@ main {
   font-size: 0.75rem;
   font-weight: normal;
   padding: 0.75rem 3rem;
+  min-width: 50%;
 }
 
 .botao__primario {
   background-color: var(--cor-primaria);
-  color: var(--cor-neutra-clara);
+  color: var(--cor-terciaria);
 }
 
 .botao__primario:hover {
@@ -148,31 +150,17 @@ main {
 
 .botao__secundario:hover {
   background-color: var(--cor-primaria);
-  color: var(--cor-neutra-clara);
+  color: var(--cor-terciaria);
 }
 
 .botao__terciario {
-  background-color: var(--cor-neutra-clara);
+  background-color: var(--cor-terciaria);
   color: var(--cor-primaria);
 }
 
 .botao__terciario:hover {
   background-color: var(--cor-primaria);
-  color: var(--cor-neutra-clara);
-}
-
-.uncripto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 30vw;
-  background-color: var(--cor-secundaria);
-  box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
-  padding: var(--padding);
-  margin: 10px;
-  height: 80vh;
-  border-radius: var(--border-radius);
+  color: var(--cor-terciaria);
 }
 
 .uncripto__mensagem {
@@ -180,9 +168,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
-  width: 100%;
-  height: 40%;
 }
 
 .uncripto__mensagem--figure {
@@ -193,7 +178,7 @@ main {
 }
 
 .uncripto__mensagem--imagem {
-  max-width: 60%;
+  max-width: 40%;
 }
 
 .uncripto__mensagem--texto {
@@ -207,4 +192,31 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 960px) {
+  html,
+  body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  main {
+    flex-direction: row;
+    width: 90%;
+    height: 80%;
+  }
+}
+
+@media (max-height: 480px) {
+  main {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  .uncripto__mensagem--imagem {
+    display: none;
+  }
 }
