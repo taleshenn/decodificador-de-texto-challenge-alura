@@ -1,0 +1,210 @@
+/* Código corrigido pela IA Gemini Advanced - Material de estudo */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --cor-primaria: #0a3871;
+  --cor-secundaria: #ecf4fd;
+  --cor-terciaria: #d5e2f3;
+  --cor-neutra-clara: #ffffff;
+  --cor-neutra-media: #808080;
+  --cor-neutra-escura: #000000;
+  --padding: 1rem;
+  --border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: var(--cor-neutra-clara);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cripto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50vw;
+  background-color: var(--cor-secundaria);
+  box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
+  padding: var(--padding);
+  margin: 10px;
+  height: 80vh;
+  border-radius: var(--border-radius);
+}
+
+.cripto__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.cripto__header--logo {
+  height: 1.3rem;
+  padding-right: 0.5rem;
+}
+
+.cripto__header h1 {
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cripto__alerta {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.cripto__alerta p {
+  color: var(--cor-neutra-media);
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding-left: 0.3rem;
+}
+
+.cripto__mensagem {
+  margin-top: 1rem;
+  width: 90%;
+  height: 70%;
+  padding-bottom: 1rem;
+}
+
+.cripto__mensagem--input,
+.uncripto__mensagem--input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+}
+
+.cripto__mensagem--input::placeholder,
+.uncripto__mensagem--input::placeholder {
+  color: var(--cor-neutra-media);
+  font-size: 0.75rem;
+  font-weight: 200;
+  padding-left: 0.3rem;
+}
+
+.cripto__mensagem--input:focus,
+.uncripto__mensagem--input:focus {
+  outline: none;
+  box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
+  color: var(--cor-primaria);
+  font-weight: 400;
+}
+
+.cripto__conteudo--acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.botao__primario,
+.botao__secundario,
+.botao__terciario {
+  border-color: var(--cor-primaria);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 27px;
+  font-size: 0.75rem;
+  font-weight: normal;
+  padding: 0.75rem 3rem;
+}
+
+.botao__primario {
+  background-color: var(--cor-primaria);
+  color: var(--cor-neutra-clara);
+}
+
+.botao__primario:hover {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.botao__secundario {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.botao__secundario:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-neutra-clara);
+}
+
+.botao__terciario {
+  background-color: var(--cor-neutra-clara);
+  color: var(--cor-primaria);
+}
+
+.botao__terciario:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-neutra-clara);
+}
+
+.uncripto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 30vw;
+  background-color: var(--cor-secundaria);
+  box-shadow: 1px 3px 5px rgba(10, 56, 113, 0.2);
+  padding: var(--padding);
+  margin: 10px;
+  height: 80vh;
+  border-radius: var(--border-radius);
+}
+
+.uncripto__mensagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 40%;
+}
+
+.uncripto__mensagem--figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uncripto__mensagem--imagem {
+  max-width: 60%;
+}
+
+.uncripto__mensagem--texto {
+  color: var(--cor-primaria);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+.uncripto__acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
