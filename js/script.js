@@ -1,4 +1,56 @@
-import { criptografarTexto, descriptografarTexto } from "./criptografia.js";
+function criptografarTexto(texto) {
+  let textoCriptografado = "";
+
+  for (let i = 0; i < texto.length; i++) {
+    let letra = texto[i].toLowerCase();
+
+    if (letra === "e") {
+      textoCriptografado += "enter";
+    } else if (letra === "i") {
+      textoCriptografado += "imes";
+    } else if (letra === "a") {
+      textoCriptografado += "ai";
+    } else if (letra === "o") {
+      textoCriptografado += "ober";
+    } else if (letra === "u") {
+      textoCriptografado += "ufat";
+    } else {
+      textoCriptografado += letra;
+    }
+  }
+  return textoCriptografado;
+}
+
+function descriptografarTexto(textoCriptografado) {
+  let textoOriginal = "";
+  let i = 0;
+
+  while (i < textoCriptografado.length) {
+    let letra = textoCriptografado[i];
+
+    if (textoCriptografado.substring(i, i + 5) === "ufat") {
+      textoOriginal += "u";
+      i += 5;
+    } else if (textoCriptografado.substring(i, i + 4) === "ober") {
+      textoOriginal += "o";
+      i += 4;
+    } else if (textoCriptografado.substring(i, i + 4) === "imes") {
+      textoOriginal += "i";
+      i += 4;
+    } else if (textoCriptografado.substring(i, i + 3) === "enter") {
+      textoOriginal += "e";
+      i += 5;
+    } else if (textoCriptografado.substring(i, i + 2) === "ai") {
+      textoOriginal += "a";
+      i += 2;
+    } else {
+      textoOriginal += letra;
+      i++;
+    }
+  }
+
+  return textoOriginal;
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const botaoCriptografar = document.getElementById("botaoCriptografar");
@@ -8,23 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const resultadoCriptografia = document.getElementById(
     "resultadoCriptografia"
   );
-  textoCripto.value = "";
-  resultadoCriptografia.value = "";
-  const uncriptoMensagemContainer = document.getElementById(
-    "uncripto__mensagem--container"
-  );
-  const uncriptoMensagemCriptografada = document.getElementById(
-    "uncripto__mensagem--criptografada"
-  );
 
   const botaoCopiarContainer = document.getElementById("botaoCopiarContainer");
 
   function atualizarVisibilidade() {
-    const resultadoCriptografia = document.getElementById(
-      "resultadoCriptografia"
-    ).value;
-
-    if (resultadoCriptografia === "") {
+    if (resultadoCriptografia.value === "") {
       uncriptoMensagemContainer.style.display = "flex";
       uncriptoMensagemCriptografada.style.display = "none";
       botaoCopiarContainer.style.display = "none";
@@ -39,11 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (textoCripto.value === "") {
       botaoCriptografar.disabled = true;
       botaoDescriptografar.disabled = true;
-      //botaoCopiar.disabled = true;
+      botaoCopiar.disabled = true;
     } else {
       botaoCriptografar.disabled = false;
       botaoDescriptografar.disabled = false;
-      //botaoCopiar.disabled = false;
+      botaoCopiar.disabled = false;
     }
   }
 
@@ -53,43 +93,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     textoCriptografado = criptografarTexto(textoCriptografado);
 
-    resultadoCriptografia.value = textoCriptografado;
+    resultadoCriptografia.value = textoCriptografado; // Alterado para .value
     textoCodificar.value = "";
 
     atualizarVisibilidade();
     atualizarEstadoBotoes();
-  });
-
-  botaoDescriptografar.addEventListener("click", function () {
-    const textoCodificar = document.getElementById("textoCripto");
-    let textoCriptografado = textoCodificar.value;
-
-    textoCriptografado = descriptografarTexto(textoCriptografado);
-
-    resultadoCriptografia.value = textoCriptografado;
-    textoCodificar.value = "";
-
-    atualizarVisibilidade();
-    atualizarEstadoBotoes();
-  });
-
-  botaoCopiar.addEventListener("click", async function () {
-    const resultadoCriptografia = document.getElementById(
-      "resultadoCriptografia"
-    );
-    resultadoCriptografia.select();
-    if (document.execCommand("copy")) {
-      alert("Texto copiado para a área de transferência!");
-    } else {
-      alert(
-        "Falha ao copiar. Verifique as permissões do navegador ou tente novamente."
-      );
-    }
   });
 
   textoCripto.addEventListener("input", atualizarEstadoBotoes);
 
   atualizarEstadoBotoes();
   atualizarVisibilidade();
-  resultadoCriptografia.addEventListener("input", atualizarVisibilidade);
 });
