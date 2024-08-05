@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Falha ao copiar. Verifique as permissões do navegador ou tente novamente."
       );
     }
+    resultadoCriptografia.value = "";
   });
 
   textoCripto.addEventListener("input", atualizarEstadoBotoes);
