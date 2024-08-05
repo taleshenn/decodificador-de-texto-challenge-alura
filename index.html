@@ -19,18 +19,26 @@
         </div>
         <div class="cripto__mensagem">
           <textarea
+            id="textoCripto"
             class="cripto__mensagem--input"
             rows="4"
             placeholder="Digite ou cole seu texto aqui."
           ></textarea>
         </div>
         <div class="cripto__conteudo--acoes">
-          <button class="botao__primario">Criptografar</button>
-          <button class="botao__secundario">Descriptografar</button>
+          <button id="botaoCriptografar" class="botao__primario">
+            Criptografar
+          </button>
+          <button id="botaoDescriptografar" class="botao__secundario">
+            Descriptografar
+          </button>
         </div>
       </section>
       <section class="uncripto">
-        <div class="uncripto__mensagem--container">
+        <div
+          id="uncripto__mensagem--container"
+          class="uncripto__mensagem--container"
+        >
           <figure class="uncripto__mensagem--figure">
             <img
               class="uncripto__mensagem--imagem"
@@ -40,21 +48,26 @@
             <figcaption class="uncripto__mensagem--texto">
               Nenhuma mensagem encontrada
             </figcaption>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
           </figure>
         </div>
 
-        <div class="uncripto__mensagem">
+        <div id="uncripto__mensagem--criptografada" class="uncripto__mensagem">
           <textarea
+            id="resultadoCriptografia"
             class="uncripto__mensagem--input"
             rows="4"
             placeholder="Digite ou cole seu texto aqui."
           ></textarea>
         </div>
 
-        <div class="uncripto__acoes">
-          <button class="botao__terciario">Copiar</button>
+        <div id="botaoCopiarContainer" class="uncripto__acoes">
+          <button id="botaoCopiar" class="botao__terciario">Copiar</button>
         </div>
       </section>
     </main>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

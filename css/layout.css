@@ -45,12 +45,13 @@ main {
   display: flex;
   justify-content: center;
 }
-
+.uncripto__mensagem--figure p,
 .cripto__alerta p {
   color: var(--cor-primaria);
   font-size: 0.75rem;
   font-weight: 400;
-  padding-left: 0.3rem;
+  padding-left: 0.5rem;
+  text-align: center;
 }
 
 .cripto__mensagem,
@@ -118,11 +119,15 @@ main {
   color: var(--cor-primaria);
   font-size: 0.75rem;
   font-weight: 600;
-  padding-top: 0.5rem;
+  padding: 1rem;
 }
 
 .uncripto__acoes {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.uncripto__mensagem--container,
+.uncripto__mensagem--criptografada {
+  flex-grow: 1; /* Permite que os itens ocupem o espaço disponível */
 }
