@@ -4,7 +4,7 @@ Este projeto é um desafio da Alura para criar um decodificador de texto com des
 
 ## Funcionalidades (em desenvolvimento)
 
-- **Criptografia:** Codifica o texto inserido pelo usuário utilizando um algoritmo específico.
+- **Criptografia:** Codifica o texto inserido pelo usuário utilizando um algoritmo fornecido pela Alura.
 - **Descriptografia:** Decodifica o texto criptografado, revelando a mensagem original.
 - **Design Responsivo:** Adapta-se a diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis e desktops.
 - **Interface Intuitiva:** Design limpo e fácil de usar, com botões e áreas de texto bem definidas.
@@ -15,7 +15,7 @@ Este projeto é um desafio da Alura para criar um decodificador de texto com des
 - **CSS:** Estilização visual, incluindo layout, cores, fontes e responsividade.
 - **JavaScript:** Implementação da lógica de criptografia/descriptografia e interação com o usuário.
 
-## Como Usar (em desenvolvimento)
+## Como Usar
 
 1. **Clonar o Repositório:**
 
@@ -32,6 +32,12 @@ Este projeto é um desafio da Alura para criar um decodificador de texto com des
    - Insira o texto desejado na área de texto.
    - Clique no botão "Criptografar" ou "Descriptografar".
    - O resultado será exibido na área de texto abaixo.
+
+## Deploy
+
+Você pode acessar e testar a aplicação completa no link abaixo:
+
+[Link para o Deploy](https://decodificador-de-texto-challenge-alura.vercel.app/)
 
 ## Branch `refatoracao-css-modular`
 
