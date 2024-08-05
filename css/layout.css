@@ -126,3 +126,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+.uncripto__mensagem--container,
+.uncripto__mensagem--criptografada {
+  flex-grow: 1; /* Permite que os itens ocupem o espaço disponível */
+}

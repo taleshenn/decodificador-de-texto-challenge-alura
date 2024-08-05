@@ -40,3 +40,17 @@
   background-color: var(--cor-primaria);
   color: var(--cor-terciaria);
 }
+
+.botao__primario:disabled,
+.botao__secundario:disabled,
+.botao__terciario:disabled {
+  opacity: 0.5; /* Diminui a opacidade para indicar que está desabilitado */
+  cursor: default; /* Muda o cursor para indicar que não é clicável */
+}
+
+.botao__primario:disabled:hover,
+.botao__secundario:disabled:hover,
+.botao__terciario:disabled:hover {
+  background-color: initial; /* Remove a mudança de cor no hover */
+  color: initial; /* Remove a mudança de cor no hover */
+}
