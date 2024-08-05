@@ -33,13 +33,6 @@ Este projeto é um desafio da Alura para criar um decodificador de texto com des
    - Clique no botão "Criptografar" ou "Descriptografar".
    - O resultado será exibido na área de texto abaixo.
 
-## Próximas Etapas
-
-- **Implementar a lógica de criptografia/descriptografia.**
-- **Adicionar validação de entrada (letras minúsculas sem acento).**
-- **Aprimorar o design e a responsividade.**
-- **Adicionar recursos extras (ex: copiar texto criptografado).**
-
 ## Branch `refatoracao-css-modular`
 
 ### O que foi feito
@@ -61,3 +54,11 @@ O código CSS foi dividido em módulos para melhorar a organização e facilitar
 - `layout.css`: Layout da página (grid, flexbox).
 - `responsivo.css`: Media queries para diferentes telas.
 - `style.css`: Importa os outros módulos.
+
+## Branch `feat/criptografar-texto`
+
+### O que foi feito
+
+- `criptografia.js` exporta as funções que fazem a criptografia e descriptografia dos textos fornecidos nos campos criados em html.
+- `interface.js` importa o criptografia.js e faz as iterações DOM.
+- `main.js` ponto de entrada principal da aplicação. Ele importa os outros módulos (criptografia.js e interface.js) e inicia a aplicação.
