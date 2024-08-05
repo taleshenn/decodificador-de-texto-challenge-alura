@@ -2,7 +2,7 @@
 
 Este projeto é um desafio da Alura para criar um decodificador de texto com design responsivo e funcionalidade de criptografia/descriptografia.
 
-## Funcionalidades (em desenvolvimento)
+## Funcionalidades
 
 - **Criptografia:** Codifica o texto inserido pelo usuário utilizando um algoritmo fornecido pela Alura.
 - **Descriptografia:** Decodifica o texto criptografado, revelando a mensagem original.
