@@ -86,7 +86,9 @@ O código CSS foi dividido em módulos para melhorar a organização e facilitar
 ## Aprendizado
 
 Além das experiências acima citadas o que mais me agregou nesse projeto foi a prática com DOM podendo interligar as funcionalidades Javascript com a estrutura do HTML.
+
 Também o uso de componentes como um recurso importante para a arquitetura dos arquivos gerando uma melhor reusabilidade dos códigos.
+
 Em CSS pude experimentar com variáveis e formas de criar semânticas ao dar nomes aos identificadores.
 
 ---
