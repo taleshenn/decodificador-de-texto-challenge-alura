@@ -3,15 +3,13 @@
 <p align="center">
 Este projeto é um desafio da Alura para criar um decodificador de texto com design responsivo e funcionalidade de criptografia/descriptografia.<br/>
 <br>
-<a href="https://decodificador-de-texto-challenge-alura.vercel.app/">Veja a versão dele funcionando aqui!</a>
-</p>
 
 <p align="center">
-  <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-aprendizado">O que aprendi?</a>
+  <a href="#funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aprendizado">O que aprendi?</a>
 </p>
 
 <p align="center">
@@ -85,7 +83,7 @@ O código CSS foi dividido em módulos para melhorar a organização e facilitar
 - `interface.js` importa o criptografia.js e faz as iterações DOM.
 - `main.js` ponto de entrada principal da aplicação. Ele importa os outros módulos (criptografia.js e interface.js) e inicia a aplicação.
 
-## 📝 Aprendizado
+## Aprendizado
 
 Além das experiências acima citadas o que mais me agregou nesse projeto foi a prática com DOM podendo interligar as funcionalidades Javascript com a estrutura do HTML.
 Também o uso de componentes como um recurso importante para a arquitetura dos arquivos gerando uma melhor reusabilidade dos códigos.
