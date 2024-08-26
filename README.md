@@ -1,6 +1,22 @@
-# Challenge Decodificador de Texto - Alura
+<h1 align="center">Challenge Decodificador de Texto - Alura</h1>
 
-Este projeto é um desafio da Alura para criar um decodificador de texto com design responsivo e funcionalidade de criptografia/descriptografia.
+<p align="center">
+Este projeto é um desafio da Alura para criar um decodificador de texto com design responsivo e funcionalidade de criptografia/descriptografia.<br/>
+<br>
+<a href="https://decodificador-de-texto-challenge-alura.vercel.app/">Veja a versão dele funcionando aqui!</a>
+</p>
+
+<p align="center">
+  <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-aprendizado">O que aprendi?</a>
+</p>
+
+<p align="center">
+  <img alt="Decodificador de Texto" src="./readme-imgs/readme-cover.jpg" width="100%">
+</p>
 
 ## Funcionalidades
 
@@ -68,3 +84,13 @@ O código CSS foi dividido em módulos para melhorar a organização e facilitar
 - `criptografia.js` exporta as funções que fazem a criptografia e descriptografia dos textos fornecidos nos campos criados em html.
 - `interface.js` importa o criptografia.js e faz as iterações DOM.
 - `main.js` ponto de entrada principal da aplicação. Ele importa os outros módulos (criptografia.js e interface.js) e inicia a aplicação.
+
+## 📝 Aprendizado
+
+Além das experiências acima citadas o que mais me agregou nesse projeto foi a prática com DOM podendo interligar as funcionalidades Javascript com a estrutura do HTML.
+Também o uso de componentes como um recurso importante para a arquitetura dos arquivos gerando uma melhor reusabilidade dos códigos.
+Em CSS pude experimentar com variáveis e formas de criar semânticas ao dar nomes aos identificadores.
+
+---
+
+## Feito com ♥ por 📩 [Tales Henn ](mailto:contato@taleshenn.com.br)
